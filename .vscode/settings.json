@@ -2,5 +2,10 @@
     // pipenv の仮想環境のあるフォルダを指定（指定しないと認識しない）
     "python.defaultInterpreterPath": "${workspaceFolder}/server/.venv/Scripts/python.exe",
     // 相対インポートが解決されるようにする
-    "python.analysis.extraPaths": ["./server"]
+    "python.analysis.extraPaths": [
+        "./server"
+    ],
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": ".github/workflows/build.yml"
+    }
 }
